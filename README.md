@@ -14,3 +14,6 @@ if the entered digits is smaller than the actual digits, will return a msg for n
 
 game of 3
 enter a number, shows for 1 til the entered number. it shows PA while it is a multiple of 3 or the number contains 3
+
+game of 3_upgrade
+added a list and colored PA with red
