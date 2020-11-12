@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game of 3</title>
+</head>
+<body>
+    <h1>Game of Three</h1>
+    <input type="number" id="number" placeholder="enter a positive number">
+    <button id="btn">Enter</button>
+    <p id="result">Result</p>
+    <script>
+        var number=document.getElementById("number");
+        var result=document.getElementById("result");
+        document.getElementById("btn").onclick=
+        function(nr){
+            nr=number.value;
+            var arr=[];
+            for(i=1;i<=nr;i++){
+                arr.push(i);
+                if(i%3==0||i.toString().indexOf(3)!=-1){
+                    arr.splice(i-1,1,"PA");        
+                }            
+            }           
+            result.innerHTML=arr.join();  
+        }
+    </script>
+</body>
+</html>

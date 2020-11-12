@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dec2bin Upgrade</title>
+</head>
+<body>
+    <input id="dec-number" type="number" placeholder="enter a positive integer">
+    <input id="bin-bit" type="number" placeholder="enter needed bit of binary">
+    <button id="trans-btn">Trans to binary</button>
+    <p id="result">Result</p>
+    <script>
+        var decNr=document.getElementById("dec-number");
+        var result=document.getElementById("result");
+        var binBit=document.getElementById("bin-bit");
+        document.getElementById("trans-btn").onclick=
+        function dec2bin(decNumber){    
+            decNumber=decNr.value;  
+            var digit=binBit.value;
+            var bit=[];
+            if(decNumber<=0){
+                result.innerHTML="feil input";
+            } 
+            else{
+                while(decNumber>=1){
+                bit.unshift(decNumber%2);
+                decNumber=Math.floor(decNumber/2);                
+            }        
+            if(bit.length<=digit){
+                var length=bit.length;   /*no idea why, but have to store the length of array as a varibal first!!!!?????*/
+                for(i=0;i<digit-length;i++){
+                    bit.unshift(0);
+                }
+            }
+            else{
+                console.log("binBit is smaller than binary number");
+            }            
+            result.innerHTML= bit.join("");
+            }                 
+        }      
+    </script>
+</body>
+</html>

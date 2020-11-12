@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dec2bin</title>
+</head>
+<body>
+    <input id="dec-number" type="number" placeholder="enter a positive integer">
+    <button id="trans-btn">Trans to binary</button>
+    <p id="result">Result</p>
+    <script>
+        var decNr=document.getElementById("dec-number");
+        var result=document.getElementById("result");
+        document.getElementById("trans-btn").onclick=        
+        function dec2bin(decNumber){    
+            decNumber=decNr.value; /*dont konw how to set parameter in outside the function?????!!!!*/
+            var bit=[];
+            if(decNumber<=0){
+                result.innerHTML="feil input";
+            } 
+            else{
+                while(decNumber>=1){
+                bit.unshift(decNumber%2);
+                decNumber=Math.floor(decNumber/2);                
+            }
+            result.innerHTML= bit.join("");
+            }                 
+        }      
+    </script>
+</body>
+</html>
