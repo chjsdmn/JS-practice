@@ -4,6 +4,7 @@ There are four small projects:
 
 9981
 Using JS to create a table that implements a nine-nine multiplication
+Demo: http://htmlpreview.github.io/?https://github.com/chjsdmn/JS-practice/blob/master/9981.html
 
 dec2bin
 enter a positive decimal number and return a coresponding binary number
