@@ -20,5 +20,6 @@ enter a number, shows for 1 til the entered number. it shows PA while it is a mu
 Demo: http://htmlpreview.github.io/?https://github.com/chjsdmn/JS-practice/blob/master/gameof3.html
 
 game of 3_upgrade
-added a list and colored PA with red
+added a list and colored PA with red.
+Demo: http://htmlpreview.github.io/?https://github.com/chjsdmn/JS-practice/blob/master/gameof3_upgrade.html
 
