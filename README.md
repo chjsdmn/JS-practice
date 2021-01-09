@@ -3,11 +3,12 @@ simple JS projects for practising
 There are four small projects:
 
 9981
-Using JS to create a table that implements a nine-nine multiplication
+Using JS to create a table that implements a nine-nine multiplication.
 Demo: http://htmlpreview.github.io/?https://github.com/chjsdmn/JS-practice/blob/master/9981.html
 
 dec2bin
-enter a positive decimal number and return a coresponding binary number
+enter a positive decimal number and return a coresponding binary number.
+Demo: http://htmlpreview.github.io/?https://github.com/chjsdmn/JS-practice/blob/master/dec2bin.html
 
 dec2bin_upgrade
 enter a positive decimal number and a needed digits of binary number, then return a coresponding binary number with required digits.
